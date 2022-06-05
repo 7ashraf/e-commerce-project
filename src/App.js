@@ -5,6 +5,7 @@ import BaseRouter from "./routes";
 import * as actions from "./store/actions/auth";
 import "semantic-ui-css/semantic.min.css";
 import CustomLayout from "./containers/Layout";
+import ProductList from "./containers/ProductList"
 
 class App extends Component {
   componentDidMount() {
@@ -15,7 +16,9 @@ class App extends Component {
     return (
       <Router>
         <CustomLayout {...this.props}>
+
           <BaseRouter />
+
         </CustomLayout>
       </Router>
     );
